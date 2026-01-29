@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ... kode tailwind bawaan ... */
+
+/* FIX: Leaflet Map Z-Index agar tidak menutupi Modal */
+.leaflet-pane {
+  z-index: 1 !important; 
+}
+.leaflet-top, .leaflet-bottom {
+  z-index: 2 !important;
+}
+/* Modal kita pakai z-50, jadi aman *
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FIX: Leaflet Map Z-Index agar tidak menutupi Modal */
+.leaflet-pane {
+  z-index: 1 !important; 
+}
+.leaflet-top, .leaflet-bottom {
+  z-index: 2 !important;
+}
